@@ -6,6 +6,9 @@
     --line-height: 34px;
     --color-ligt: white;
     --color-dark: #707070; 
+    --color-coffee: #603809;
+    --font-famyily-logo: "Clicker Script", cursive;
+    --font-text: 20px;
 
 }
 
@@ -24,9 +27,24 @@ body,
 
 .container {
 
-    border: 2px solid yellow;
+    border: 1px solid yellow;
     max-width: 1180px;
     margin: 0 auto;
+}
+
+.btn {
+        color: var(--btn-color);
+        background-color: var(--btn-background);
+        padding: var(--btn-paddings);
+        border-radius: var(--btn-radius);
+        display: inline-block;
+        transition: 0.3s;
+       
+}
+
+.dark-heading {
+    color: var(--color-coffee);
+    font-size: 54px;
 }
    header {
     background-image: url(img/imgcoffi.jpg) ;
@@ -37,7 +55,7 @@ body,
 
 header .logo {
 
-    font-family: "Clicker Script", cursive;
+    font-family: var(--font-famyily-logo);
     font-weight: 400;
     font-style: normal;
     font-size: 35px;
@@ -48,13 +66,15 @@ header .logo {
 
 
 header a{
-    color: #fff;
+    color: var(--color-ligt);
+    text-decoration: none;
 }
 
 header nav {
     border: 1px solid red;
     font-size: 14px;
     font-weight: 600;
+    
 }
 
 header ul {
@@ -86,54 +106,83 @@ header .login {
 }
 
 .hero {
-border: 1px solid red;
+      border: 1px solid red;
 }
+
 .signin-btn {
-    margin-right: 35px;
     text-decoration: underline;
 }
+
 .signup-btn {
+    margin-left: 35px;
+  
+}
+
+/*.signup-btn {
     color: var(--btn-color);
     background-color: var(--btn-background);
     border-radius: var(--btn-radius);
     padding: 14px 27px 15px;
     transition: 0.3s;
-}
+}*/
 
-.signup-btn:hover {
+.btn-hover:hover {
     box-shadow: 0 0 10px 2px #666;
 }
 
 .hero {
-    width: 527px;
+    width: 585px;
     padding-top: 116px;
     padding-bottom: 95px;
 }
-.hero .label,
+
+.hero .label {
+    font-size: 22px;
+    color: var(--color-ligt);
+}
+
+
 .hero .description {
-color: var(--color-ligt) ;
-font-size: 22px;
-border: 2px solid yellow;
+         color: var(--color-ligt);
+         font-size: var(--font-text);
+
 }
 
 .hero .title {
     color: var(--color-ligt);
-    font-family: "Clicker Script", cursive;
+    font-family: var(--font-famyily-logo);
     font-size: 220px;
+    font-weight: normal;
 }
 
 .hero .description {
     line-height : var(--line-height) ;
 }
 .order-btn {
-    background-color: #F9C06A;
-    padding: var(--btn-paddings);
-    border-radius: var(--btn-radius);
-    color: var(--btn-color);
-    font-weight: bold;
-    display: inline-block;
+   
     margin-top: 20px;
 
 }
+
+.advantages {
+    padding-bottom: 130px;
+    padding-top: 80px;
+}
+
+.advantages p {
+    margin: 29px 0;
+    color: var(--color-dark);
+    font-size: var(--font-text);
+    line-height: var(--line-height);
+}
+.advantages .description {
+    width: 585px;
+    display: inline-block;
+    margin-right: 80px;
+    vertical-align: 60px;
+}
+
+
+
 
 
