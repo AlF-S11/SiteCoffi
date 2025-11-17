@@ -266,15 +266,11 @@ header .login {
 
 .features .card > * {
     display: block;
-    
-    
-    
 }
 
 .features .card {
     background-color: #FFF9F1;
     margin-right: 20px;
-
 }
 
 .features .card:last-child {
